@@ -12,3 +12,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+.search-bar input {
+  height: 35px;
+  width: 650px;
+}
+.search-bar button {
+  padding: 5px 5px;
+  height: 35px;
+  width: 100px;
+}
+form .search-bar{
+
+}
+.search-bar {
+  padding: 10px;
+}
+ul {
+   list-style-type: none;
+
+}
+
+.nav-Main {
+  display: center;
+  margin: 1em 10em 3.2em;
+}
+.nav-Main button {
+width: auto;
+margin-left: .5em;
+
+}
+.nav-Main a {
+  text-decoration: none;
+  color: black;
+}
+.main-Header {
+  text-align: center;
+}
+
+.main-Header div ul{
+display: inline-flex;
+}
