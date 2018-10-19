@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   padding: 0;
@@ -117,6 +118,7 @@ display: inline-flex;
   width: 250px;
   overflow: hidden;
   margin-bottom: 15px;
+  border-radius: 2em;
 }
 .pic-holder {
   text-align: center;
@@ -126,20 +128,25 @@ display: inline-flex;
   text-transform: uppercase;
 }
 .pic-list li:hover img {
-  transform: scale(1.50);
-  border-radius: 1em;
-  transition: 1s;
-
+  transform: rotate(360deg) matrix3d(2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1);
+  border-radius: 3em;
+  transition: .25s;
+  border: 5px;
+  border-style: solid;
+  border-color: white;
 }
 * {
   background-color: #C9E2F8;
 }
 
+
 @media only screen and (max-width: 767px)  {
   body {
     padding-top: 2em;
   }
-
+  .nav-Main a {
+    margin:auto;
+  }
   .pic-holder li {
     margin: auto;
   }

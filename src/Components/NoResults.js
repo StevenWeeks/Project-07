@@ -1,5 +1,5 @@
 import React from 'react'
-
+// basic page for if a user inputs a term that gets no image response from flickr.
 const NoResult = () => {
     return (
         <li className="not-found">

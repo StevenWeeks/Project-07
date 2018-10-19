@@ -1,21 +1,25 @@
+// import react and react component (including classes that extend it, such as App.js)
 import React, { Component } from 'react'
 import createHistory from 'history/createBrowserHistory'
 
+//use history to change the route in the browser
 const history = createHistory()
-
+// export Search/ extend components to include this
   export default class Search extends Component {
 
-
+//setting the state of searchterm to undefined
     state = {
       searchTerm:''
     }
-
+    // when the text in the search input changes, this sets the searchTerm as the value in the input
     onSearchChange = e => {
       this.setState ({
         searchTerm: e.target.value
       })
     }
-
+// this function handles what happens after the search button is pressed, preventing the page from refreshing,
+// props is called from component and uses the onSearch function on the input of the search bar.
+// then pushes the route of /search and the input/query value.  Then resets the search bar text.
     handleSubmit = e => {
       e.preventDefault()
 
@@ -25,7 +29,8 @@ const history = createHistory()
       history.push(looky)
       e.currentTarget.reset()
     }
-
+// this renders the search bar and search button.  using a SVG to get the magnifying glass art on the button, so folks
+// know to click it.
     render () {
       return (
         <form className="search-bar" onSubmit={this.handleSubmit}>
