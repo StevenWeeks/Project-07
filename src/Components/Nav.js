@@ -7,9 +7,10 @@ const Nav = () => {
 <div>
   <nav className="nav-Main">
     <ul>
-      <li><button><NavLink to={"/search/dogs"} style={{ textDecoration: 'none' }}>Dogs</NavLink></button></li>
-      <li><button><NavLink to={"/search/pigs"} style={{ textDecoration: 'none' }}>Pigs</NavLink></button></li>
-      <li><button><NavLink to={"/search/videogames"} style={{ textDecoration: 'none' }}>Videogames</NavLink></button></li>
+      <li><NavLink to={"/dogs"} style={{ textDecoration: 'none' }}>Dogs</NavLink></li>
+      <li><NavLink to={"/pigs"} style={{ textDecoration: 'none' }}>Pigs</NavLink></li>
+      <li><NavLink to={"/videogames"} style={{ textDecoration: 'none' }}>Videogames</NavLink></li>
+      <li><NavLink exact to={"/search"} style={{ textDecoration: 'none' }}>Search</NavLink></li>
     </ul>
   </nav>
 </div>
