@@ -4,14 +4,13 @@ import apiKey from './Config'
 import {
   BrowserRouter,
   Switch,
-  Route,
-  Redirect
+  Route
 } from 'react-router-dom'
 
 // Components
 import Header from './Components/Header'
 import Gallery from "./Components/Gallery"
-import NoResults from "./Components/NoResults"
+
 import Search from "./Components/SearchBar"
 import Error404 from "./Components/Error404"
 
